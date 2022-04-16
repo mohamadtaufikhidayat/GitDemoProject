@@ -2,7 +2,7 @@ package repo;
 import java.util.Scanner;
 
 public class UploadGithubUjianSoal2 {
-	//70//34 26 44//21 39 33/cek1
+	//70//34 26 44//21 39 33/cek2
 	public Scanner scan = new Scanner(System.in);
 	public int [][] ArrayItem(){
 		int arrayItem [][]=new int [2][3];
