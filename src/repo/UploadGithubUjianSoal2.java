@@ -2,7 +2,7 @@ package repo;
 import java.util.Scanner;
 
 public class UploadGithubUjianSoal2 {
-	//70//34 26 44//21 39 33 xy
+	//70//34 26 44//21 39 33 
 	public Scanner scan = new Scanner(System.in);
 	public int [][] ArrayItem(){
 		int arrayItem [][]=new int [2][3];
@@ -22,7 +22,7 @@ public class UploadGithubUjianSoal2 {
 	}
 	public void hasilSum() {
 		System.out.println("Masukan Nilai masukan uang Andi:");
-		int a=0;
+		int a=0;int b=0,m=0;int q=0,p=0;
 		int uangAndi= scan.nextInt();
 		int [][] arrayItem = ArrayItem();
 		int [][] arraySum = new int [3][3];
@@ -32,10 +32,13 @@ public class UploadGithubUjianSoal2 {
 				arraySum [i][j]=sum;
 				if(arraySum[i][j]<=uangAndi&&arraySum[i][j]>a) {
 				a=arraySum[i][j];
-				//System.out.println(arraySum[i][j]);
+				 b= arrayItem[0][i];
+				 m=arrayItem[1][j];
+				 q=i;p=j;
 				}
 			}
 		}
+		System.out.println("hasil ini adalah hasil penjumlahan dari "+"kacamata ke "+(q+1)+" harga "+b+" dengan baju ke "+(p+1)+" harga "+m);
 		System.out.println(a);
 		
 	}
